@@ -1,0 +1,35 @@
+<!--开发示例文件  -&#45;&#45;》 每个页面引入header文件和footer文件，中间内容都用 id="main-content" 包裹-->
+<%- include('header'); -%>
+
+<div id="main-content">
+    <!-- BEGIN PAGE CONTAINER-->
+    <div class="container-fluid">
+        <!-- BEGIN PAGE HEADER-->
+        <div class="row-fluid">
+            <div class="span12">
+                <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                <h3 class="page-title">
+                    控制台
+                </h3>
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="#">首页</a>
+                        <span class="divider">/</span>
+                    </li>
+                    <li class="active">
+                        控制台
+                    </li>
+                </ul>
+                <!-- END PAGE TITLE & BREADCRUMB-->
+            </div>
+        </div>
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="row-fluid">
+            主页内容
+        </div>
+    </div>
+
+</div>
+
+<%- include('footer'); -%>
