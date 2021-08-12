@@ -4,32 +4,28 @@
 <div id="main-content">
     <!-- BEGIN PAGE CONTAINER-->
     <div class="container-fluid">
-        <!-- BEGIN PAGE HEADER-->
         <div class="row-fluid">
-            <div class="span12">
-                <!-- BEGIN PAGE TITLE & BREADCRUMB-->
-                <h3 class="page-title">
-                    控制台
-                </h3>
-                <ul class="breadcrumb">
-                    <li>
-                        <a href="#">首页</a>
-                        <span class="divider">/</span>
-                    </li>
-                    <li class="active">
-                        控制台
-                    </li>
-                </ul>
-                <!-- END PAGE TITLE & BREADCRUMB-->
-            </div>
-        </div>
-        <!-- END PAGE HEADER-->
-        <!-- BEGIN PAGE CONTENT-->
-        <div class="row-fluid">
-            主页内容
+            <ul>
+                <%= JSON.stringify(data) %>
+
+            </ul>
+            <span>热播数量 <span>56</span></span>
+            <table class="table table-bordered">
+                <tr>
+                    <td>名字</td>
+                    <td>年龄</td>
+                    <td>性别</td>
+                    <td>爱好</td>
+                </tr>
+                <% data.forEach(function(item){ %>
+                   <tr><td><%= item.name %></td><td><%= item.age %></td><td><%= item.sex %></td><td><%= item.favorite %></td></tr>
+                <% }); %>
+            </table>
         </div>
     </div>
 
 </div>
+
+
 
 <%- include('footer'); -%>
